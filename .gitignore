@@ -1,0 +1,6 @@
+.env
+.env/
+.venv/
+.idea/
+shopify_app/__pycache__/
+shopify_app/migrations/__pycache__/
