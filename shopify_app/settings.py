@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-da*@2m9(nl0=v4_kz-=ocdn&w!ai_=hy0i@*@i&kh1^f*nuod@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'shopifyapp.local']
 
 
 # Application definition
@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "shopify_app"
+    "rest_framework",
+    "shopify_app",
 ]
 
 MIDDLEWARE = [

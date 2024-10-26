@@ -23,4 +23,16 @@ from shopify_app import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('products/', views.product_list, name='product_list'),
+
+    # Product Endpoints
+    path('product/', views.create_product, name='create_product'),  # POST
+    path('product/<int:pk>/', views.get_product, name='get_product'),  # GET
+    path('product/<int:pk>/update/', views.update_product, name='update_product'),  # PUT
+    path('product/<int:pk>/delete/', views.delete_product, name='delete_product'),  # DELETE
+
+    # Customer Endpoints
+    path('customer/', views.create_customer, name='create_customer'),         # POST
+    path('customer/<int:pk>/', views.get_customer, name='get_customer'),      # GET
+    path('customer/<int:pk>/update/', views.update_customer, name='update_customer'),  # PUT
+    path('customer/<int:pk>/delete/', views.delete_customer, name='delete_customer'),  # DELETE
 ]
