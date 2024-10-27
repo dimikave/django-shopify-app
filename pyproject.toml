@@ -15,6 +15,7 @@ djangorestframework = "^3.15.2"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "~8.3.3"
+pylint-django = "^2.6.1"
 
 [build-system]
 requires = ["poetry-core"]
